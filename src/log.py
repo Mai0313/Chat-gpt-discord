@@ -55,7 +55,7 @@ def setup_logger(module_name:str) -> logging.Logger:
         # create local log handler
         log_handler = logging.handlers.RotatingFileHandler(
             filename=log_path,
-            encoding='utf-8',
+            encoding='ISO-8859-15',
             maxBytes=32 * 1024 * 1024,  # 32 MiB
             backupCount=2,  # Rotate through 5 files
         )
