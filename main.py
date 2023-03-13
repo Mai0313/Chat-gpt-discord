@@ -11,7 +11,7 @@ def check_verion() -> None:
 
     # Read the requirements.txt file and add each line to a list
     with open('requirements.txt') as f:
-        required = f.read().splitlines()
+        required = f.read()
 
     # For each library listed in requirements.txt, check if the corresponding version is installed
     for package in required:
